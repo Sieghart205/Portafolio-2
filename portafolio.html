@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Proyectos</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Inicio</a>
+        <a href="portafolio.html">Portafolio</a>
+        <a href="acerca_de.html">Acerca De</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+    </header>
+    <div class="cursor" id="cursor">
+        <div class="cursor_inner"></div>
+    </div>
+    <div class="portafolio">
+        <section class="sec-01">
+          <div class="main-title">
+            <h3>Background con photoshop</h3>
+          </div>
+          <div class="content">
+            <div class="image">
+              <img src="img/proyectos/interestelar background.png" alt="" />
+            </div>
+            <div class="block">
+              <h3>Fondo de Pantalla Espacial</h3>
+              <p>
+                Este proyecto consiste en la creación de un fondo de pantalla
+                utilizando técnicas avanzadas de edición en Photoshop. El diseño
+                presenta una escena interestelar con colores vibrantes y elementos
+                inspirados en el espacio.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="sec-02">
+          <div class="main-title">
+            <h3>Vectorización de personaje</h3>
+          </div>
+          <div class="content">
+            <div class="image">
+              <img src="img/proyectos/jolyne examen_Mesa de trabajo 1.jpg" />
+            </div>
+            <div class="info">
+              <h3>Vectorización Artística</h3>
+              <p>
+                En este proyecto se realiza la vectorización detallada de un
+                personaje, transformando una imagen rasterizada en un arte vectorial
+                de alta calidad. Se emplean técnicas de ilustración digital para
+                resaltar los detalles y lograr un resultado visual impactante.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="main-title">
+            <h3>Teoría del color</h3>
+          </div>
+          <div class="slider">
+            <img
+              src="img/proyectos/teoria del color/jolyne cujoh_Mesa de trabajo 1.jpg"
+              alt=""
+            />
+            <img src="img/proyectos/teoria del color/jolyne cujoh-02.jpg" alt="" />
+            <img src="img/proyectos/teoria del color/jolyne cujoh-03.jpg" alt="" />
+            <img src="img/proyectos/teoria del color/jolyne cujoh-04.jpg" alt="" />
+            <img src="img/proyectos/teoria del color/jolyne cujoh-05.jpg" alt="" />
+            <img src="img/proyectos/teoria del color/jolyne cujoh-06.jpg" alt="" />
+          </div>
+          <div class="content">
+            <p class="parraf">
+              Este proyecto explora la aplicación de la teoría del color en el
+              diseño gráfico. Se toma una misma imagen vectorizada y se presentan
+              seis variaciones, cada una utilizando una paleta de colores diferente.
+              Las paletas incluyen monocromática, triada, complementaria, cuadrada y
+              análoga, demostrando cómo la selección adecuada de colores puede
+              influir en la percepción visual de una composición.
+            </p>
+          </div>
+        </section>
+    </div>
+    <script src="scripts/index.js"></script>
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: "60px",
+        duration: "2500",
+      });
+
+      ScrollReveal().reveal(".main-title", { delay: 200, origin: "top" });
+      ScrollReveal().reveal(".content, .slider", {
+        delay: 500,
+        origin: "bottom",
+      });
+      ScrollReveal().reveal(".block, .info", { delay: 700, origin: "right" });
+    </script>
+  </body>
+</html>
